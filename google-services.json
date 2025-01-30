@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "851364392108",
+    "project_id": "rentalcrates-ad96e",
+    "storage_bucket": "rentalcrates-ad96e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851364392108:android:5c1255cf325747bb70c309",
+        "android_client_info": {
+          "package_name": "com.example.rental_crates1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_XAnAgEGXWohIhfYDOLxXAEwnpLp_oR0"
+          
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
