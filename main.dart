@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'package:rental_crates1/auth/main_page.dart';
+import 'package:rental_crates1/auth/pages/dashboard.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
