@@ -98,7 +98,37 @@ class _LoginPageState extends State<LoginPage> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 13),
                   child: TextButton(
-                    onPressed: signIn,
+                    onPressed: () async {
+                      await signIn();
+                      showDialog(
+                        context: context,
+                        builder: (context) {
+                          return AlertDialog(
+                            content: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  const Text('Login Successful!'),
+                                  const Text('Welcome to Rental Crates!'),
+                                  const SizedBox(height: 10),
+                                  TextButton(
+                                    onPressed: () {
+                                      Navigator.pop(context);
+                                    },
+                                    child: const Text('CONTINUE'),
+                                  )
+                                ],
+                              ),
+                            ),
+                            shape: RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(10))),
+                          );
+                        },
+                      );
+                    },
                     child: Container(
                       padding: EdgeInsets.all(20),
                       decoration: BoxDecoration(
@@ -129,7 +159,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     GestureDetector(
                       child: TextButton(
-                        onPressed: widget.showRegisterPage,
+                        onPressed: (widget.showRegisterPage),
                         child: Text(
                           'Create Account',
                           style: TextStyle(

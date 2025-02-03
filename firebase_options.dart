@@ -23,9 +23,15 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         return windows;
       case TargetPlatform.linux:
@@ -41,46 +47,28 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyChRNzvDYT93kUV4ZXt17IScr7U588XnAg',
-    appId: '1:851364392108:web:bc486d0722fc682b70c309',
-    messagingSenderId: '851364392108',
-    projectId: 'rentalcrates-ad96e',
-    authDomain: 'rentalcrates-ad96e.firebaseapp.com',
-    storageBucket: 'rentalcrates-ad96e.firebasestorage.app',
+    apiKey: 'AIzaSyDRXr5aYRjO1nF3aqGZ2PVkh4i0TntCOPg',
+    appId: '1:174431162482:web:410ab61092982f5d1632eb',
+    messagingSenderId: '174431162482',
+    projectId: 'rental-shit',
+    authDomain: 'rental-shit.firebaseapp.com',
+    storageBucket: 'rental-shit.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBINenZlSMn0d26F6ayEsiaOk4dte11IVE',
-    appId: '1:851364392108:android:5c1255cf325747bb70c309',
-    messagingSenderId: '851364392108',
-    projectId: 'rentalcrates-ad96e',
-    storageBucket: 'rentalcrates-ad96e.firebasestorage.app',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAL5ih307kAWup6ame-RDRGHRO2M7JaSlM',
-    appId: '1:851364392108:ios:75beaf61b2a24ac670c309',
-    messagingSenderId: '851364392108',
-    projectId: 'rentalcrates-ad96e',
-    storageBucket: 'rentalcrates-ad96e.firebasestorage.app',
-    iosBundleId: 'com.example.rentalCrates1',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAL5ih307kAWup6ame-RDRGHRO2M7JaSlM',
-    appId: '1:851364392108:ios:75beaf61b2a24ac670c309',
-    messagingSenderId: '851364392108',
-    projectId: 'rentalcrates-ad96e',
-    storageBucket: 'rentalcrates-ad96e.firebasestorage.app',
-    iosBundleId: 'com.example.rentalCrates1',
+    apiKey: 'AIzaSyA_XAnAgEGXWohIhfYDOLxXAEwnpLp_oR0',
+    appId: '1:174431162482:android:95b8e58aa454aa271632eb',
+    messagingSenderId: '174431162482',
+    projectId: 'rental-shit',
+    storageBucket: 'rental-shit.firebasestorage.app',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyChRNzvDYT93kUV4ZXt17IScr7U588XnAg',
-    appId: '1:851364392108:web:74ec343070da5b0570c309',
-    messagingSenderId: '851364392108',
-    projectId: 'rentalcrates-ad96e',
-    authDomain: 'rentalcrates-ad96e.firebaseapp.com',
-    storageBucket: 'rentalcrates-ad96e.firebasestorage.app',
+    apiKey: 'AIzaSyDRXr5aYRjO1nF3aqGZ2PVkh4i0TntCOPg',
+    appId: '1:174431162482:web:410ab61092982f5d1632eb',
+    messagingSenderId: '174431162482',
+    projectId: 'rental-shit',
+    authDomain: 'rental-shit.firebaseapp.com',
+    storageBucket: 'rental-shit.firebasestorage.app',
   );
 }
